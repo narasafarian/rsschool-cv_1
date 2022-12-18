@@ -1,6 +1,31 @@
+@font-face {
+    font-family: Inter;
+    src: url("./assets/fonts/inter.ttf");
+}
+
 html, body {
-    font-family: Arial, serif;
+    font-family: Inter, Arial, serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 75px;
+}
+
+.photo {
+    max-width: 100%;  
+    height: auto;  
+}
+
+.left-column {
+    background: rgb(116 162 90 / 14%);
+    padding: 60px;
+}
+
+.right-column {
+    padding-top: 60px;
 }
