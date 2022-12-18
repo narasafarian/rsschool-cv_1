@@ -6,14 +6,21 @@
 html, body {
     font-family: Inter, Arial, serif;
     font-size: 16px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 900px;
+}
+
+.header {
+    background: rgb(174 192 164 / 14%);
+    padding: 5px;
 }
 
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 75px;
+    background: rgb(174 192 164 / 14%);
 }
 
 .photo {
@@ -28,4 +35,66 @@ html, body {
 
 .right-column {
     padding-top: 60px;
+    padding-right: 60px;
+}
+
+.contacts-container {
+    display: flex;
+}
+
+.contacts-icons {
+    max-width: 18px;
+    max-height: 18px;
+    margin-right: 10px;
+}
+
+.skills-container {
+    display: flex;
+}
+
+.skill-icon {
+    max-width: 18px;
+    max-height: 18px;
+    margin-right: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.code-example {
+    background-color: rgb(236, 231, 231);
+    padding: 15px;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: rgb(174 192 164 / 14%);
+}
+
+.github-container {
+    display: flex;
+    align-items: center;
+}
+
+.github-link {
+    text-decoration: none;
+}
+
+.rs-school {
+    text-decoration: none;
+}
+
+.footer-github-icon {
+    max-width: 38px;
+    max-height: 38px;
+    margin-right: 5px;
+}
+
+.footer-rs-school-icon {
+    width: 100px;
+    height: 30px;
 }
