@@ -1,0 +1,14 @@
+
+
+.logo, .plants, .navigation-menu{
+    display: inline-block;
+}
+
+.navigation-menu li{
+    display: inline-block;
+}
+
+.navigation-menu {
+    display: flex;
+    justify-content: right;
+}
