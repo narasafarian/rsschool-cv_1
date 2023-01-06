@@ -5,50 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
      <div class="wrapper">
-        <img src="" alt="" class="logo">
-        <a href="#" class="plants">Plants</a>
-        <nav>
-            <ul class="navigation__menu">
-                <li class="home">
-                    <a href="#">Home</a>
-                </li>
-                <li class="about">
-                    <a href="#">About us</a>
-                </li>
-                <li class="service">
-                    <a href="#">Service</a>
-                </li>
-                <li class="price">
-                    <a href="#">Price</a>
-                </li>
-                <li class="contacts">
-                    <a href="#">Contacts</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__nav">
+            <a href="#" class="logo"><img src="./svg/logo.svg" alt="" class="logo_pic">Plants</a>
+
+            <nav>
+                <ul class="navigation__menu">
+                    <li class="navigation__item">
+                        <a href="#" class="nav__link active">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="nav__link">About us</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="nav__link">Service</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="nav__link">Price</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="nav__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
      </div>
     </header>
     <main>
         <section class="welcome">
             <div class="wrapper">
-                <div class="welcome__right">
-                    <h1 class="welcome__title">We grow plants and give you oxygen</h1>
+               <div class="welcome__columns">
+                <div class="welcome__column-one">
+                    <img src="./png/blurred_leaves.png" alt="Blurred leaves">
+                </div>
+                <div class="welcome__column-two">
+                    <h1 class="welcome__title">We grow <span class="highlighted-word">plants</span> and give you oxygen</h1>
                     <p class="welcome__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <a href="#" class="welcome__learn-more">LEARN MORE</a>
-                </div> 
-
+                    <button class="learn-more__btn" name="button"><a class="learn-more__text" href="#">LEARN MORE</a></button>
+                </div>
+               </div> 
            </div>
         </section>
         <section class="about">
             <div class="wrapper">
-                <h2 class="about__title">We are professional experienced gardeners</h2>
-                <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
+                <div class="about__columns">
+                    <div class="about__column-one">
+                        <h2 class="about__title">We are <span class="highlighted-phrase">professional experienced</span> gardeners</h2>
+                        <p class="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>        
+                    </div>
+                    <div class="about__column-two">
+                        <img src="./png/monstera.png" alt="Monstera plant">
+                    </div>
+                </div>
             </div>
         </section>
         <section class="service">
@@ -103,10 +119,24 @@
         </section>
         <section class="contacts">
             <div class="wrapper">
-                
+
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="wrapper">
+            <img src="./svg/©_icon.svg" alt="" class="c-icon">
+            <span class="year">2022</span>
+            <a href="" class="github">github</a>
+            <a href="" class="rs-school">Rolling Scopes School</a>
+            <ul class="social-nets">
+                <li><a href=""><img src="./svg/insta_icon.svg" alt=""></a></li>
+                <li><a href=""><img src="./svg/fb_icon.svg" alt=""></a></li>
+                <li><a href=""><img src="./svg/twitter_icon.svg" alt=""></a></li>
+                <li><a href=""><img src="./svg/pinterest_icon.svg" alt=""></a></li>
+            </ul>
+        </div>
+        
+    </footer>
 </body>
 </html>
