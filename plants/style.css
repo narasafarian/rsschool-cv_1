@@ -26,7 +26,7 @@ html {
 /* body */ 
 
 body {
-font-style: 1.6rem;
+font-size: 1.6rem;
 font-family: 'Inter', 'Inika', sans-serif;
 }
 
@@ -51,7 +51,6 @@ font-family: 'Inter', 'Inika', sans-serif;
 
 .logo { 
     font-family: 'Inika' sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -72,7 +71,6 @@ font-family: 'Inter', 'Inika', sans-serif;
     text-decoration: none;
     color: #010201;
     font-family: 'Inika' sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 50px;
@@ -101,7 +99,6 @@ font-family: 'Inter', 'Inika', sans-serif;
 
 .welcome__title {
     font-family: 'Inter' sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 45px;
     line-height: 50px;
@@ -115,7 +112,6 @@ font-family: 'Inter', 'Inika', sans-serif;
 
 .welcome__text {
     font-family: 'Inter' sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 35px;
@@ -126,7 +122,6 @@ font-family: 'Inter', 'Inika', sans-serif;
 
 .learn-more__btn {
     font-family: 'Inter' sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -156,7 +151,6 @@ font-family: 'Inter', 'Inika', sans-serif;
 
 .about__title {
     font-family: 'Inika';
-    font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
@@ -171,13 +165,103 @@ font-family: 'Inter', 'Inika', sans-serif;
 
 .about__text {
     font-family: 'Inter' sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     color: #636060;
 }
 
+.service {
+    background-color: #EDF2EC;
+}
+
+.service-navigation {
+    margin: 40px 0 90px;
+}
+
+.service-navigation__columns {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0 0;
+    justify-items: left;
+    margin-bottom: 90px;
+}
+
+.service__title {
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    max-width: 306px;
+}
+
+.service__buttons {
+    margin-top: 29px;
+}
+
+.service__btn {
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    padding: 14px 27px;
+    background-color: #EDF2EC;
+    margin-right: 38px;
+    width: 161px;
+
+}
+
+.service__btn-name {
+    color: #E06733;
+    text-decoration: none;
+}
+
+.service__list {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+}
+
+.service__img {
+    display: block;
+}
+
+.service__description {
+    text-align: center;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.service__cell {
+    max-width: 330px;
+    margin-bottom: 55px;
+}
+
+.service__img {
+    border-radius: 20px 20px 0px 0px;
+}
 
 
+.project__title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    margin: 10px 0;
+
+}
+
+.project__description {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+    margin-bottom: 36px;
+}
 
