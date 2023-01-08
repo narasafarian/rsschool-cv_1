@@ -12,22 +12,21 @@
     box-sizing: border-box;
 }
 
-
-
-
-
 /* html */ 
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 
 /* body */ 
 
 body {
-font-size: 1.6rem;
-font-family: 'Inter', 'Inika', sans-serif;
+    font-size: 1.6rem;
+    font-family: 'Inter', 'Inika', sans-serif;
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .wrapper {
@@ -265,3 +264,219 @@ font-family: 'Inter', 'Inika', sans-serif;
     margin-bottom: 36px;
 }
 
+.prices {
+    background: #FFFFFF;
+}
+
+.contacts {
+    background: #EDF2EC;
+}
+
+.contacts__title {
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.contacts__container {
+    padding-top: 20px;
+    display: grid; 
+    grid-template-columns: 1fr 220px 1fr; 
+    grid-template-rows: 1fr;  
+    align-content: space-around;
+}
+
+.contacts__img {
+    max-width: 400px;
+}
+
+.location__container {
+    padding-top: 88px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contacts__location {
+    width: 450px;
+    height: 50px;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-image: url(./svg/accordion_btn.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 399px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+    padding-left: 20px;
+}
+
+select {
+    appearance: none;
+}
+
+select:active, select:hover {
+    outline-color: #C1E698;
+    background: #C1E698;
+    box-shadow: none;
+    background-image: url(./svg/accordion_btn.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 399px;
+    padding-right: 35px;
+    box-shadow: none;
+  }
+
+  option::placeholder {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+  }
+
+.contact-us__btn {
+    font-family: 'Inika';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    width: 162px;
+    height: 50px;
+}
+
+.contact-us__btn-name {
+    color: #E06733;
+    text-decoration: none;
+}
+
+.prices__container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+}
+
+.left__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.prices {
+    padding-bottom: 60px;
+}
+
+.packages__container {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    width: 332px;
+    height: 282px;
+    padding: 15px 0 2px;
+}
+
+.packages__accordion {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+    background-color: #EDF2EC;
+    border: 1px;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    background-image: url(./svg/accordion_btn_light_grey.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 194px;
+
+
+}
+
+.right__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 38px;
+}
+
+.prices__img {
+    width: 152px;
+    height: 175px;
+}
+
+.prices .wrapper {
+    padding-bottom: 115px;
+}
+
+.slogan-btn__container {
+    width: 452px;
+}
+
+.prices-slogan {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
+}
+
+.gardeners {
+    color: #499A18;
+}
+
+.footer {
+    background-color: #FFFFFF;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.year__container {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+
+.footer__content {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.rs-school__link {
+    padding: 0 325px;
+}
+
+.social-nets {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    list-style: none;
+}
+
+.socials__icons {
+    width: 32px;
+    height: 32px;
+}
