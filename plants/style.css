@@ -784,6 +784,10 @@ select:active, select:hover {
         width: 380px;
     }
 
+    .mobile-nav-button {
+        display: block;
+    }
+
     .mobile-nav.active {
         display: flex;
     }
