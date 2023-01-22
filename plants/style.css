@@ -547,16 +547,8 @@ select:active, select:hover {
     text-align: center;
 }
 
-.mobile-nav.active {
-    display: flex;
-}
-
-.mobile-nav__menu {
-    font-size: 22px;
-}
-
-.mobile-nav__menu li + li {
-    margin-top: 20px;
+.mobile-nav-button {
+    display: none;
 }
 
 
@@ -792,6 +784,18 @@ select:active, select:hover {
         width: 380px;
     }
 
+    .mobile-nav.active {
+        display: flex;
+    }
+
+    .mobile-nav__menu {
+        font-size: 22px;
+    }
+
+    .mobile-nav__menu li + li {
+        margin-top: 20px;
+    }
+
     .wrapper {
         max-width: 380px;
         padding: 35px 25px;
@@ -820,6 +824,7 @@ select:active, select:hover {
 
     .welcome {
         height: 300px;
+        width: 380px;
     }
 
     .welcome .wrapper {
@@ -839,6 +844,7 @@ select:active, select:hover {
     .welcome__columns {
         justify-content: flex-end;
         padding-bottom: 99px;
+        width: auto;
     }
 
     .welcome__column-one {
@@ -863,6 +869,7 @@ select:active, select:hover {
 
     .about {
         height: 516px;
+        width: 380px;
     }
 
     .about .wrapper {
@@ -903,6 +910,7 @@ select:active, select:hover {
 
     .service {
         height: 3150px;
+        width: 380px;
     }
 
     .service .wrapper {
@@ -940,13 +948,116 @@ select:active, select:hover {
     .service__cell {
         margin-bottom: 34px;
     }
+
+    .prices {
+        height: 512px;
+        width: 380px;
+    }
+
+    .prices .wrapper {
+        padding-top: 25px;
+    }
+
+    .prices__title {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 37px;
+        padding-left: 1px;
+    }
+
+    .left__column {
+        align-items: center;
+    }
+
+    .packages__container {
+        width: 224px;
+        height: 235px;
+        padding-top: 28px;
+        justify-content: normal;
+    }
+
+    .packages__accordion {
+        width: 180px;
+        height: 49.72px;
+        font-size: 15px;
+        padding-left: 30px;
+        margin-bottom: 14px;
+    }
+
+    .prices__container {
+        grid-template-columns: 1fr;
+    }
+
+    .slogan-btn__container {
+        width: 230px;
+        height: 77px;
+    }
+
+    .prices-slogan {
+        font-size: 20px;
+        padding-top: 19px;
+        text-align: center;
+    }
+
+    .right__column {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .contact-us__btn {
+        width: 121px;
+        height: 35px;
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: 3px;
+    }
+    
+    .prices__img {
+        display: none;
+    }
+
+    .contacts {
+        height: 445px;
+        width: 380px;
+    }
+
+    .contacts .wrapper {
+        padding-top: 9px;
+    }
+
+    .contacts__location {
+        width: 300px;
+    }
+
+    .contacts__title {
+        font-size: 25px;
+    }
+
+    .location__container {
+        padding-top: 71px;
+    }
+
+    .contacts__img {
+        width: 100px;
+        height: 124.25px;
+        margin-top: 131px;
+        margin-left: -4px;
+    }
+
+    .footer {
+        height: 146px;
+    }
+    
+    .footer .wrapper {
+        padding: 10px 0 0;
+    }
+
+    .rs-school__link {
+        margin-top: -5px;
+    }
+
+    .social-nets__container {
+        margin-top: 5px;
+    }
 }
 
-
-
-
-
-
-
-
-/* Adaptive mobile */
