@@ -58,6 +58,10 @@ body {
     text-decoration: none;
 }
 
+.blur {
+    filter: blur(2px);
+}
+
 /* navigation bar */
 
 .navigation__menu {
@@ -245,6 +249,11 @@ body {
     cursor: pointer;
 }
 
+.service__btn.active {
+    background-color: #E06733;
+    color: #FFFFFF;
+}
+
 .service__list {
     display: grid; 
     grid-template-columns: 330px 330px 330px; 
@@ -347,7 +356,7 @@ body {
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     width: 332px;
-    height: 282px;
+    min-height: 282px;
     padding: 15px 0 2px;
 }
 
@@ -366,9 +375,70 @@ body {
     background-image: url(./svg/accordion_btn_light_grey.svg);
     background-repeat: no-repeat;
     background-size: 16px;
-    background-position: 194px;
+    background-position: 194px 17px;
     text-align: left;
-    padding-left: 40px;;
+    padding-left: 40px;
+    transition: 0.2s;
+    margin-bottom: 20px;
+}
+
+.packages__accordion.active {
+    background-color: #D6E7D2;
+    height: 154px;
+    background-image: url(./svg/accordion_btn_dark_grey.svg);
+}
+
+.packages__prices {
+    display: none;
+    overflow: hidden;
+    margin-right: 41px;
+}
+
+.packages__prices-divider {
+    border: 0.5px solid #AEA1A1;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.packages__prices-description {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    width: 169px;
+    margin-bottom: 6px;
+}
+
+.packages__prices-rate {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.packages__prices-rate-number {
+    color: #E06733;
+    font-size: 16px;
+}
+
+.packages__prices-button {
+    width: 86px;
+    height: 25px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 3px 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    color: #717171;
+    text-decoration: none;
 }
 
 .right__column {
@@ -709,7 +779,11 @@ select:active, select:hover {
     }
 
     .prices {
-        height: 585px;
+        min-height: 585px;
+    }
+
+    .prices .wrapper {
+        padding-bottom: 93px;
     }
 
     .prices__title {
@@ -954,8 +1028,12 @@ select:active, select:hover {
     }
 
     .prices {
-        height: 512px;
+        min-height: 512px;
         width: 380px;
+    }
+
+    .prices .wrapper {
+        padding-bottom: 40px;
     }
 
     .prices .wrapper {
@@ -975,7 +1053,7 @@ select:active, select:hover {
 
     .packages__container {
         width: 224px;
-        height: 235px;
+        min-height: 235px;
         padding-top: 28px;
         justify-content: normal;
     }
