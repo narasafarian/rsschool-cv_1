@@ -436,8 +436,9 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 25px;
     color: #717171;
+    text-decoration: none;
 }
 
 .right__column {
