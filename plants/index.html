@@ -109,49 +109,49 @@
                    <div class="service-navigation__columns">
                     <h2 class="service__title">Service and our projects</h2>
                     <div class="service__buttons">
-                        <button class="service__btn" type="button">Gardens</button>
-                        <button class="service__btn" type="button">Lawn</button>
-                        <button class="service__btn" type="button">Planting</button>
+                        <button class="service__btn" type="button" value="garden">Gardens</button>
+                        <button class="service__btn" type="button" value="lawn">Lawn</button>
+                        <button class="service__btn" type="button" value="planting">Planting</button>
                     </div>
                    </div>
                 </div>
                 <div class="service__list">
-                    <div class="service__cell">
+                    <div class="service__cell" data-category="garden">
                         <img src="./jpg/service_first.jpg" alt="Woman with aloe vera" class="service__img">
                         <div class="service__description">
                             <h3 class="project__title">Garden care</h3>
                             <p class="project__description">Lorem Ipsum has been the industry</p>    
                         </div>
                     </div>
-                    <div class="service__cell">
+                    <div class="service__cell" data-category="planting">
                         <img src="./jpg/service_second.jpg" alt="Lemon in a hand" class="service__img">
                         <div class="service__description">
                             <h3 class="project__title">Planting</h3>
                             <p class="project__description">Lorem Ipsum has been the industry</p>    
                         </div>
                     </div>
-                    <div class="service__cell">
+                    <div class="service__cell" data-category="lawn">
                         <img src="./jpg/service_third.jpg" alt="Woman watering plants" class="service__img">
                         <div class="service__description">
                             <h3 class="project__title">Lawn care</h3>
                             <p class="project__description">Lorem Ipsum has been the industry</p>    
                         </div>
                     </div>
-                    <div class="service__cell">
+                    <div class="service__cell" data-category="planting">
                         <img src="./jpg/service_fourth.jpg" alt="Wonam cutting flowers" class="service__img">
                         <div class="service__description">
                             <h3 class="project__title">Planting</h3>
                             <p class="project__description">Lorem Ipsum has been the industry</p>    
                         </div>
                     </div>
-                    <div class="service__cell">
+                    <div class="service__cell" data-category="garden">
                         <img src="./jpg/service_fifth.jpg" alt="Succulents on a table" class="service__img">
                         <div class="service__description">
                             <h3 class="project__title">Garden care</h3>
                             <p class="project__description">Lorem Ipsum has been the industry</p>    
                         </div>
                     </div>
-                    <div class="service__cell">
+                    <div class="service__cell" data-category="planting">
                         <img src="./jpg/service_sixth.jpg" alt="Hands planting cacti" class="service__img">
                         <div class="service__description">
                             <h3 class="project__title">Planting</h3>
@@ -167,19 +167,34 @@
                     <div class="left__column">
                         <h2 class="prices__title">Prices</h2>
                         <div class="packages__container">
-                            <button class="packages__accordion">Basics</button>
-                            <div class="prices__packages">
-
-                            </div>
-                            <button class="packages__accordion">Standard</button>
-                                <div class="prices__packages">
-
+                            <button class="packages__accordion">
+                                <div>Basics</div>
+                                <div class="packages__prices">
+                                    <hr class="packages__prices-divider" />
+                                    <div class="packages__prices-description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</div>
+                                    <div class="packages__prices-rate"><span class="packages__prices-rate-number">$15</span> / per hour</div>
+                                    <div class="packages__prices-button">Order</div>
                                 </div>
-                            <button class="packages__accordion">Pro care</button>
-                                <div class="prices__packages">
-
-                                </div>                    
-                            </div>
+                            </button>
+                            <button class="packages__accordion">
+                                <div>Standard</div>
+                                <div class="packages__prices">
+                                    <hr class="packages__prices-divider" />
+                                    <div class="packages__prices-description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</div>
+                                    <div class="packages__prices-rate"><span class="packages__prices-rate-number">$25</span> / per hour</div>
+                                    <div class="packages__prices-button">Order</div>
+                                </div>
+                            </button>
+                            <button class="packages__accordion">
+                                <div>Pro care</div>
+                                <div class="packages__prices">
+                                    <hr class="packages__prices-divider" />
+                                    <div class="packages__prices-description">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</div>
+                                    <div class="packages__prices-rate"><span class="packages__prices-rate-number">$5</span> / per hour</div>
+                                    <div class="packages__prices-button">Order</div>
+                                </div>
+                            </button>
+                        </div>
                     </div>
                     <div class="right__column">
                         <div class="slogan-btn__container">
